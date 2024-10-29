@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evergreen</title>
+    <link rel="stylesheet" href="style.scss" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Evergreen</h1>
+      </nav>
+      <div class="container">
+        <h2>Revitalize Seu Corpo e Mente com Ginseng</h2>
+        <p>
+          Cultivamos o ginseng de maneira sustentável, garantindo a pureza e potência de nossos produtos. Com sua rica
+          tradição na medicina natural, o ginseng é conhecido por melhorar a performance física e mental, sendo ideal
+          para quem busca mais energia e equilíbrio na rotina.
+        </p>
+        <a href="#">Saiba Mais</a>
+      </div>
+    </header>
+    <section class="products">
+      <h2>Nossos Produtos</h2>
+      <div class="product-list">
+        <div class="product">
+          <div class="head">
+            <img loading="lazy" src="resources/background.webp" alt="#" />
+          </div>
+          <div class="body">
+            <h3>Suplemento de Ginseng</h3>
+            <p>
+              Nossos suplementos de ginseng são feitos para aumentar sua energia e melhorar a concentração, sendo
+              perfeitos para um dia produtivo e equilibrado.
+            </p>
+            <a href="#">Solicitar Informações</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="head">
+            <img loading="lazy" src="resources/background.webp" alt="#" />
+          </div>
+          <div class="body">
+            <h3>Creme Revitalizante de Ginseng</h3>
+            <p>
+              Nosso creme à base de ginseng ajuda a revitalizar a pele, proporcionando um efeito energizante e
+              rejuvenescendo sua aparência naturalmente.
+            </p>
+            <a href="#">Solicitar Informações</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="head">
+            <img loading="lazy" src="resources/background.webp" alt="#" />
+          </div>
+          <div class="body">
+            <h3>Cápsulas de Ginseng</h3>
+            <p>
+              As cápsulas de ginseng oferecem uma maneira conveniente de obter todos os benefícios da planta, como
+              aumento de energia e fortalecimento do sistema imunológico.
+            </p>
+            <a href="#">Solicitar Informações</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="head">
+            <img loading="lazy" src="resources/background.webp" alt="#" />
+          </div>
+          <div class="body">
+            <h3>Chá de Ginseng</h3>
+            <p>
+              Nosso chá de ginseng é uma forma relaxante e eficaz de aproveitar os benefícios naturais dessa planta,
+              ajudando a reduzir o estresse e aumentar a vitalidade.
+            </p>
+            <a href="#">Solicitar Informações</a>
+          </div>
+        </div>
+        <svg class="column" viewBox="0 0 70 970" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="35" cy="35" r="29" stroke="currentColor" stroke-width="12" />
+          <circle cx="35" cy="335" r="29" stroke="currentColor" stroke-width="12" />
+          <circle cx="35" cy="635" r="29" stroke="currentColor" stroke-width="12" />
+          <circle cx="35" cy="935" r="29" stroke="currentColor" stroke-width="12" />
+          <line x1="35" y1="308" x2="35" y2="60" stroke="currentColor" stroke-width="12" />
+          <line x1="35" y1="609" x2="35" y2="361" stroke="currentColor" stroke-width="12" />
+          <line x1="35" y1="910" x2="35" y2="662" stroke="currentColor" stroke-width="12" />
+        </svg>
+      </div>
+    </section>
+    <main class="about">
+      <h2>Sobre a Evergreen</h2>
+      <p>
+        Na Evergreen, nosso compromisso é promover o equilíbrio entre corpo e mente por meio do poder natural das
+        plantas. Com especialização em produtos à base de Ginseng, oferecemos soluções que ajudam a aumentar sua
+        energia, melhorar a concentração e fortalecer a saúde de forma natural.
+      </p>
+      <p>
+        Cultivamos ingredientes com responsabilidade ambiental e sustentável, garantindo que cada produto reflita a
+        pureza e a potência da natureza. Nosso objetivo é apoiar você em uma jornada de revitalização e bem-estar
+        duradouro, trazendo os benefícios milenares do Ginseng para o seu dia a dia.
+      </p>
+      <a href="#">Saiba Mais</a>
+    </main>
+    <section class="testimonial">
+      <h2>O Que Nossos Clientes Dizem</h2>
+      <p>
+        <span>"</span>Depois que comecei a usar os produtos de Ginseng da Evergreen, minha energia melhorou
+        significativamente. As cápsulas me ajudam a manter o foco e o chá é perfeito para relaxar após um dia
+        estressante. Estou muito satisfeita com os resultados!<span>"</span>
+      </p>
+      <span>- Mariana Silva</span>
+    </section>
+    <section class="contact-form">
+      <h2>Solicitar Mais Informações</h2>
+      <form>
+        <div class="group-align">
+          <div class="group">
+            <label for="first-name">Nome</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="group">
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <div class="group-align">
+          <div class="group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="group">
+            <label for="product-option">Selecione um Produto</label>
+            <select id="product-option" name="product-option" required>
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="suplemento-de-ginseng">Suplemento de Ginseng</option>
+              <option value="creme-de-ginseng">Creme Revitalizante de Ginseng</option>
+              <option value="capsulas-de-ginseng">Cápsulas de Ginseng</option>
+              <option value="cha-de-ginseng">Chá de Ginseng</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-area">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 Evergreen | Todos os Direitos Reservados</p>
+    </footer>
+  </body>
+</html>
