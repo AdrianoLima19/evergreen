@@ -206,6 +206,7 @@ section.products {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
+        transition-delay: 240ms;
 
         h3 {
           font-size: 2.25rem;
@@ -413,20 +414,23 @@ section.contact-form {
     }
 
     input,
-    textarea {
+    textarea,
+    select {
       font-size: 1rem;
       line-height: 1.5rem;
       border-radius: 4px;
-    }
+      border: 1px solid $text-color;
+      padding: 0.16em 0.36em;
 
-    input,
-    textarea,
-    select {
       &:focus {
         outline: 2px solid $text-color-accent;
         outline-offset: -1px;
         border-radius: 4px;
       }
+    }
+
+    select {
+      padding: 0.32em 0.36em;
     }
 
     button {
@@ -480,4 +484,35 @@ footer {
     text-align: center;
     color: $text-color-accent;
   }
+}
+
+.slide-from {
+  &-top,
+  &-bottom,
+  &-left,
+  &-right {
+    opacity: 0;
+    transition: transform 720ms ease, opacity 680ms ease;
+  }
+
+  &-top {
+    transform: translateY(-12vh);
+  }
+
+  &-bottom {
+    transform: translateY(12vh);
+  }
+
+  &-left {
+    transform: translateX(-16vw);
+  }
+
+  &-right {
+    transform: translateX(16vw);
+  }
+}
+
+.slide {
+  transform: translate(0%, 0%);
+  opacity: 1 !important;
 }
